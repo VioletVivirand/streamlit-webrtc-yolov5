@@ -1,8 +1,12 @@
+matplotlib==3.*,>=3.4.2
 numpy==1.*,>=1.20.3
 opencv-python==4.*,>=4.5.2
 pandas==1.*,>=1.2.4
 pyarrow==4.*,>=4.0.1
+pyyaml==5.*,>=5.4.1
+seaborn==0.*,>=0.11.1
 streamlit==0.*,>=0.82.0
 streamlit-webrtc==0.*,>=0.20.1
 torch==1.*,>=1.8.1
 torchvision==0.*,>=0.9.1
+tqdm==4.*,>=4.61.0
