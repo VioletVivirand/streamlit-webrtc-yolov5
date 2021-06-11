@@ -21,3 +21,5 @@ streamlit run app.py
 ## TODO
 
 * Add another example to use RTSP stream as source, take RTSP as [**"Consuming media files on server-side and streaming it to browser (recvonly)"**](https://github.com/whitphx/streamlit-webrtc/blob/2c63c17c3843213f5b3ed007724cb7d95d1f9b5f/app.py#L441) example's parameter of the [MediaPlayer()](https://github.com/whitphx/streamlit-webrtc/blob/2c63c17c3843213f5b3ed007724cb7d95d1f9b5f/app.py#L472) function.
+* Replace the model with custom YOLOv5 model
+* Replace the model with MobileNet-SSD (MobileNet Backbone SSD Model)
