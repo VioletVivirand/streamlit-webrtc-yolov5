@@ -16,6 +16,7 @@ WEBRTC_CLIENT_SETTINGS = ClientSettings(
     rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
     media_stream_constraints={"video": True, "audio": True},
 )
+MODEL = torch.hub.load('ultralytics/yolov5', 'yolov5s')
 
 def main():
     """Object detection demo with PyTorch
@@ -29,7 +30,8 @@ def main():
         result_queue: "queue.Queue[List[Detection]]"
 
         def __init__(self) -> None:
-            self._model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
+            global MODEL
+            self._model = MODEL
             self.result_queue = queue.Queue()
 
         def _annotate_image(self, image, results):
