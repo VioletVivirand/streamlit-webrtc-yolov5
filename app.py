@@ -15,8 +15,12 @@ import torch
 WEBRTC_CLIENT_SETTINGS = ClientSettings(
     rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
     media_stream_constraints={"video": True, "audio": True},
-)
-MODEL = torch.hub.load('ultralytics/yolov5', 'yolov5s')
+
+# Official Model
+# MODEL = torch.hub.load('ultralytics/yolov5', 'yolov5s')
+
+# Custom Model
+MODEL = torch.hub.load('ultralytics/yolov5', 'custom', path='./yolov5s-optimized.pt')
 
 def main():
     """Object detection demo with PyTorch
